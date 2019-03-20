@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-//宣告全域變數 預設如果沒有設值初始值為0
+//宣告全域變數 如果沒有設值 初始值為0
 var (
 	i int
 	j float64
