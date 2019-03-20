@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-//宣告全域變數 預設初始值為0
+//宣告全域變數 預設如果沒有設值初始值為0
 var (
 	i int
 	j float64
@@ -20,7 +20,7 @@ func main() {
 	fmt.Println(a2)
 	fmt.Println(a3)
 
-	//同時宣告兩個變數並付值
+	//同時宣告兩個變數並設值
 	var b, c int = 99, 11
 	fmt.Println(b, c)
 
