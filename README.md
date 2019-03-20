@@ -1,0 +1,2 @@
+# goBasic
+Basic golang sample
