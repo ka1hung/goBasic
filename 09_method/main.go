@@ -7,8 +7,7 @@ type myMath struct {
 	num2 float64
 }
 
-//有的人很喜歡用New的方式開始產生一個Struct(比較有class的感覺?)
-func myMathNew(n1, n2 float64) *myMath {
+func NewmyMath(n1, n2 float64) *myMath {
 	return &myMath{
 		num1: n1,
 		num2: n2,
