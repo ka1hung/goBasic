@@ -12,7 +12,7 @@ func doSomething(name string) {
 	}
 }
 func main() {
-	go doSomething("kai")
-	go doSomething("hung")
+	go doSomething("hi")
+	go doSomething("hello")
 	time.Sleep(1 * time.Second) //wait to see result
 }
