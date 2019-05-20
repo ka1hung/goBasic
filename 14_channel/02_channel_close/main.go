@@ -5,19 +5,17 @@ import (
 	"time"
 )
 
-func fibonacci(n int, c chan int) {
-	x, y := 0, 1
+func counter(n int, c chan int) {
 	for i := 0; i < n; i++ {
 		time.Sleep(time.Second)
-		c <- x
-		x, y = y, x+y
+		c <- i
 	}
 	close(c)
 }
 
 func main() {
 	c := make(chan int)
-	go fibonacci(20, c)
+	go counter(20, c)
 	for i := range c {
 		fmt.Println(i)
 	}
